@@ -106,7 +106,10 @@ df_patient_CHUL.head(10)
 
 # %%
 
-sample_per_page= 100
+
+
+
+id_p="CHUL_8792e190119f9b2e2263bde2888499ce8e3f528a93222dfaae7120b95716d6d3"
 url=f'https://prod.ohc.projectpersist.eu/internal-fhir/org1/{resource}/_search?&_count={sample_per_page}&page={50}'
 asw=requests.post(url,auth=auth).json()
 print(asw)
